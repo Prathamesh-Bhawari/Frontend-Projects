@@ -9,3 +9,494 @@ body{
     height: 100%;
     width: 100%;
 }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0px 15px lightgray;
+    padding: 0.5rem 1.5rem;
+    margin: 0 auto;
+}
+
+.logo-gif{
+    height: 3.5rem;
+}
+
+.header-title-container{
+    display: none;
+}
+
+.login-container{
+    display: none;
+}
+
+.menu-button{
+    font-size: 2rem;
+}
+
+.menu-button:hover{
+    cursor: pointer;
+}
+
+.menu-content{
+    position: absolute;
+    background-color: rgba(69, 69, 69, 0.414);
+    backdrop-filter: blur(8px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4.8rem 0;
+    gap: 1.8rem;
+    display: none;
+}
+
+.menu-content ol{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+}
+
+.menu-content ol a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-button{
+    text-decoration: none;
+    background-color: #6674CC;
+    padding: 1rem 1.5rem;
+    border-radius: 200px;
+    color: white;
+    font-weight: 500;
+}
+
+.cancel-button-container{
+    font-size: 1.5rem;
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .menu-button-container{
+        display: none;
+    }
+
+    .header-title-container{
+        display: block;
+    }
+
+    .header-title-container ul{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+        font-weight: 500;
+    }
+
+    .header-title-container ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .login-container{
+        display: block;
+        background-color: #6674CC;
+        padding: 1rem 1.5rem;
+        border-radius: 200px;
+    }
+
+    .login-container a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+/* codehelp red */
+
+
+.red-grid-main-container{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(15, 6, 6, 0.845), rgba(227, 113, 109, 0.741));
+    margin: 3rem auto;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 83rem;
+}
+
+.red-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.tuned{
+    border: 1px solid #DD2828;
+    color: #DD2828;
+    padding: 0.5rem 0.8rem;
+    background-color:rgba(239, 68, 68, 0.1);
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.red-heading{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.red{
+    color: #DC2626;
+}
+
+.red-content{
+    font-size: 18px;
+    color: rgb(161, 161, 170);
+}
+
+.notify-container{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(220, 38, 38);
+    border-radius: 10px;
+}
+
+.notify-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    /* background-color: yellow; */
+}
+
+.notify{
+    font-size: 14px;
+}
+
+.red-logo-container{
+    background: rgba(15, 15, 15, 0.5);
+    width: 20rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+@media (min-width: 640px) {
+    .notify-container{
+        width: 7rem;
+        padding-right: 9px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .red-grid-main-container{
+        flex-direction: row;
+    }
+}
+
+/* code help services */
+
+.max-width{
+    max-width: 83rem;
+    margin: 0 auto;
+}
+
+.serivce-flex-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.service-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+}
+
+.service-right-top{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-heading{
+    font-size: 1rem;
+    text-align: center;
+    color: #6B7280;
+}
+
+.service-desc{
+    text-align: center;
+    color: #ABAFB5;
+    max-width: 31rem;
+}
+
+.service-content{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.view-course-button{
+    background-color: #6674CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem; 
+    border-radius: 2rem;   
+}
+
+.view-course-button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+} 
+
+.view-course-button:hover{
+    background-color: #4b559b;
+}
+
+.a-of-watch-video{
+    text-decoration: none;
+}
+
+.watch-video-main-container{
+    border: 1px solid #e3491a;  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;    
+    letter-spacing: 1.3px;
+}
+
+.watch-video-main-container:hover{
+    background: rgba(56, 56, 56, 0.834);;
+}
+
+.watch-video{
+    color: black;
+    font-weight: 540;
+}
+
+.standing-line{
+    color: black;
+}
+
+.watch-video-left{
+    display: flex;
+    gap: 5px;
+    color: #EF476F;
+}
+
+.service-right-bottom{
+    display: none;
+
+}
+
+.service-left ol{
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.7rem;
+}
+
+.service-left ol a{
+    text-decoration: none;
+    letter-spacing: 1.4px;
+    font-size: 18px;
+    color: black;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e3491a;
+    padding: 1rem 4rem;
+    border-radius: 0.6rem;
+}
+
+.service-left ol a:hover{
+    background: rgba(57, 57, 57, 0.308)
+}
+
+@media (min-width: 640px) {
+    .service-heading{
+        font-size: 1.5rem;
+        max-width: 35rem;
+    }
+
+    .service-left ol a{
+        font-size: 24px;
+        padding: 1rem 1.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .service-left ol{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+@media (min-width: 1280px) {
+    .serivce-flex-main-container{
+        flex-direction: row;
+    }
+
+    .service-right{
+        justify-content: start;
+    }
+
+    .service-heading{
+        text-align: start;
+    }
+
+    .service-desc{
+        text-align: start;
+        margin-left: -4rem;
+    }
+
+    .service-right-bottom{
+        display: flex;
+        border: 1px solid #e3491a;
+        border-radius: 3rem;
+        padding: 1rem ;
+        gap: 11rem;
+    }
+
+    .person-pic{
+        display: flex;
+        position: relative;
+    }
+
+    .persons-container-shape{
+        display: flex;
+        height: 3rem;
+        border-radius: 50%;
+        border: 3px solid white;
+        overflow: hidden;
+        transition: transform 0.3s ease-in;
+    }
+
+    .persons-container-shape:hover{
+        cursor: pointer;
+        transform: scale(1.2);
+        z-index: 99;
+    }
+
+    .person2{
+        position: absolute;
+        left: 35px;
+    }
+
+    .person3{
+        position: absolute;
+        left: 65px;
+    }
+
+    .person4{
+        position: absolute;
+        left: 95px;
+    }
+
+    .person5{
+        position: absolute;
+        left: 125px;
+    }
+
+    .person6{
+        position: absolute;
+        left: 155px;
+    }
+
+    .about-person-design{
+        background-color: rgb(51, 51, 51);
+        color: white;
+        padding: 0.8rem 1rem;
+        border-radius: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .aboutperson1{
+        position: absolute;
+        top: 300px;
+        left: 10px;
+        display: none;
+    }
+
+    .aboutperson2{
+        position: absolute;
+        top: 300px;
+        left: 40px;
+        display: none;
+    }
+
+    .aboutperson3{
+        position: absolute;
+        top: 300px;
+        left: 70px;
+        display: none;
+    }
+
+    .aboutperson4{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        display: none;
+    }
+
+    .aboutperson5{
+        position: absolute;
+        top: 300px;
+        left: 130px;
+        display: none;
+    }
+
+    .aboutperson6{
+        position: absolute;
+        top: 300px;
+        left: 160px;
+        display: none;
+    }
+
+    .persons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    
+} 
+
