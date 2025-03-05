@@ -83,4 +83,13 @@ document.addEventListener("DOMContentLoaded", function () {
     person6.addEventListener("mouseleave" ,function (){
         gsap.set(aboutperson6, {display:"none"});
     });
+
+    gsap.from(".new-pop", {
+        opacity:0,
+        repeat:-1,
+        duration:2,
+        y:-100,
+        ease: "bounce.out"
+    })
+
 });
